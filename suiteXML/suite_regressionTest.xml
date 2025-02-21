@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RT-Suite">
+	<groups>
+		<run>
+			<include name="regressionTest"/>
+		</run>
+	</groups>
+	>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.comcast.crm.contactTest.CreateContactTest" />
+			<class name="com.comcast.crm.orgTest.CreateOrganizationTest" />
+			<class name="com.comcast.crm.campaignTest.CreateCampaignTest" />
+			<class name="com.comcast.crm.products.CreateProductsTest" />
+		</classes>
+	</test>
+</suite>

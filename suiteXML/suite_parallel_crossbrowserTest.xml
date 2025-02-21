@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite">
+	<listeners>
+		<listener
+			class-name="generic.listenerUtility.ListenerImplementationClass"></listener>
+	</listeners>
+	<test name="TestRunner-FireFox">
+		<parameter name="Browser" value="firefox" />
+		<classes>
+			<class name="practice.test.InvoiceTest_Listener" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="TestRunner-Chrome">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="practice.test.InvoiceTest_Listener" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
