@@ -19,4 +19,5 @@ public class OrganizationPage {
 	public WebElement getCreateOrganizationIcon() {
 		return createOrganizationIcon;
 	}
+	
 }
