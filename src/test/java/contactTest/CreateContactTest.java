@@ -44,6 +44,10 @@ public class CreateContactTest extends BaseClass {
 		String actLastName = cip.getVerifyLastNameMsg().getText();
 		SoftAssert soft = new SoftAssert();
 		soft.assertEquals(actLastName, lastName);
+		
+		
+		
+		// comment
 	}
 	
 	
